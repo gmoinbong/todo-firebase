@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Todo } from "@/entity/todos/model";
-import { useAddTodo } from "../add/model";
-import { useEditTodo } from "../edit/model";
-import { useFindTodos } from "../find-list/model/use-find-list";
+import { useAddTodo } from "../add";
+import { useEditTodo } from "../edit";
+import { useFindTodos } from "../find-list/model";
 import { useRemoveTodo } from "../remove/model";
 import { useUserData } from "@/features/user/profile/hooks/use-user-data";
 

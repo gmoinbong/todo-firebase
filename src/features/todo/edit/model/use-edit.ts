@@ -4,8 +4,8 @@ import { handleErrorMessage } from "@/shared";
 import { Todo } from "@/entity/todos/model";
 
 export const useEditTodo = () => {
-  return async (input: { 
-    id: string; 
+  return async (input: {
+    id: string;
     userId: string;
     data: Partial<Todo>
   }) => {
