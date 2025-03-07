@@ -1,4 +1,4 @@
-export * from './Login';
-export * from './Register';
-export * from './Logout';
+export * from './login';
+export * from './register';
+export * from './logout/ui';
 

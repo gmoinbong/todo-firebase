@@ -1,15 +1,9 @@
-import { Login } from "@/features/auth";
-import { Register } from "@/features/auth";
-import { Logout } from "@/features/auth";
+import { AppRoutes } from "./router"
+
 
 function App() {
-
   return (
-    <div>
-      <Register />
-      <Login />
-      <Logout />
-    </div>
+    <AppRoutes/>
   )
 }
 
