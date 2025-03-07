@@ -8,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { handleErrorMessage } from "@/shared";
 import { LoginType, useLogin } from "../model/use-login";
 import { useAuthRedirect } from "@/shared/hooks/use-auth-redirect";
+import { Link } from "react-router-dom";
 
 
 export const LoginForm: FC = () => {
@@ -56,6 +57,7 @@ export const LoginForm: FC = () => {
                     </p>}
 
                 <Button text={"Sign in"} type="submit" />
+                <p>Don't have an account? <Link className="text-blue-500 " to={"/register"} >Sign up</Link> </p>
             </Form>
         </FormProvider>
     );

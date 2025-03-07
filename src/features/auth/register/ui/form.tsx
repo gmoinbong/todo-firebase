@@ -8,6 +8,7 @@ import { Button } from '@/shared/ui';
 import { EmailRegisterSchema, emailRegisterSchema } from '../lib';
 import { RegisterType, useRegister } from '../model';
 import { handleErrorMessage } from '@/shared';
+import { useAuthRedirect } from '@/shared/hooks/use-auth-redirect';
 
 
 export const RegisterForm: FC = () => {
@@ -16,6 +17,7 @@ export const RegisterForm: FC = () => {
   const { formState: { errors }, handleSubmit } = form;
 
   const register = useRegister(RegisterType.EMAIL)
+  useAuthRedirect();
 
   const onSubmit: SubmitHandler<EmailRegisterSchema> = async (data) => {
     try {
